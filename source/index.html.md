@@ -6,6 +6,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - ruby
   - python
   - javascript
+  - csharp
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -13,6 +14,8 @@ toc_footers:
 
 includes:
   - errors
+  - test
+  - Untitled-1
 
 search: true
 ---
