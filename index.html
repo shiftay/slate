@@ -201,7 +201,7 @@
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;,&quot;csharp&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -215,6 +215,7 @@
               <a href="#" data-language-name="ruby">ruby</a>
               <a href="#" data-language-name="python">python</a>
               <a href="#" data-language-name="javascript">javascript</a>
+              <a href="#" data-language-name="csharp">csharp</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -243,6 +244,22 @@
           </li>
           <li>
             <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+          </li>
+          <li>
+            <a href="#test" class="toc-h1 toc-link" data-title="Test">Test</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#connects-to-the-database-and-attempts-to-apply-all-adds-updates-and-deletes" class="toc-h2 toc-link" data-title="Test">Connects to the database and attempts to apply all adds,  updates and deletes</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#untitled-1" class="toc-h1 toc-link" data-title="Untitled-1">Untitled-1</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#connects-to-the-database-and-attempts-to-apply-all-adds-updates-and-deletes" class="toc-h2 toc-link" data-title="Untitled-1">Connects to the database and attempts to apply all adds,  updates and deletes</a>
+                  </li>
+              </ul>
           </li>
       </div>
         <ul class="toc-footer">
@@ -445,35 +462,35 @@ Remember — a happy kitten is an authenticated kitten!
 </thead><tbody>
 <tr>
 <td>400</td>
-<td>Bad Request -- Your request sucks</td>
+<td>Bad Request -- Your request sucks.</td>
 </tr>
 <tr>
 <td>401</td>
-<td>Unauthorized -- Your API key is wrong</td>
+<td>Unauthorized -- Your API key is wrong.</td>
 </tr>
 <tr>
 <td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only</td>
+<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
 </tr>
 <tr>
 <td>404</td>
-<td>Not Found -- The specified kitten could not be found</td>
+<td>Not Found -- The specified kitten could not be found.</td>
 </tr>
 <tr>
 <td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method</td>
+<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
 </tr>
 <tr>
 <td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json</td>
+<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
 </tr>
 <tr>
 <td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers</td>
+<td>Gone -- The kitten requested has been removed from our servers.</td>
 </tr>
 <tr>
 <td>418</td>
-<td>I&#39;m a teapot</td>
+<td>I&#39;m a teapot.</td>
 </tr>
 <tr>
 <td>429</td>
@@ -488,7 +505,54 @@ Remember — a happy kitten is an authenticated kitten!
 <td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
 </tr>
 </tbody></table>
+<h1 id='test'>Test</h1><h2 id='connects-to-the-database-and-attempts-to-apply-all-adds-updates-and-deletes'>Connects to the database and attempts to apply all adds,  updates and deletes</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>&quot;data&quot;</td>
+<td>a dataset, passed by reference,  that contains all the  data for updating</td>
+</tr>
+<tr>
+<td>&quot;data&quot;</td>
+<td>a dataset, passed by reference,  that contains all the  data for updating</td>
+</tr>
+</tbody></table>
 
+<blockquote>
+<p>This sample shows how to call the SaveData  method from a wireless device.</p>
+</blockquote>
+<pre class="highlight csharp tab-csharp"><code>
+<span class="n">AccidentCRUD</span> <span class="n">accCRUD</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Adjuster</span><span class="p">.</span><span class="n">BusinessServices</span><span class="p">.</span><span class="nf">AccidentCRUD</span><span class="p">();</span>
+<span class="n">accCRUD</span><span class="p">.</span><span class="nf">SaveData</span><span class="p">(</span><span class="k">ref</span> <span class="n">ds</span><span class="p">);</span>
+
+</code></pre><h1 id='untitled-1'>Untitled-1</h1><h2 id='connects-to-the-database-and-attempts-to-apply-all-adds-updates-and-deletes'>Connects to the database and attempts to apply all adds,  updates and deletes</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>&quot;data&quot;</td>
+<td>a dataset, passed by reference,  that contains all the  data for updating</td>
+</tr>
+<tr>
+<td>&quot;data&quot;</td>
+<td>a dataset, passed by reference,  that contains all the  data for updating</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>This sample shows how to call the SaveData  method from a wireless device.</p>
+</blockquote>
+<pre class="highlight csharp tab-csharp"><code>
+<span class="n">AccidentCRUD</span> <span class="n">accCRUD</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Adjuster</span><span class="p">.</span><span class="n">BusinessServices</span><span class="p">.</span><span class="nf">AccidentCRUD</span><span class="p">();</span>
+<span class="n">accCRUD</span><span class="p">.</span><span class="nf">SaveData</span><span class="p">(</span><span class="k">ref</span> <span class="n">ds</span><span class="p">);</span>
+</code></pre>
       </div>
       <div class="dark-box">
           <div class="lang-selector">
@@ -496,6 +560,7 @@ Remember — a happy kitten is an authenticated kitten!
                 <a href="#" data-language-name="ruby">ruby</a>
                 <a href="#" data-language-name="python">python</a>
                 <a href="#" data-language-name="javascript">javascript</a>
+                <a href="#" data-language-name="csharp">csharp</a>
           </div>
       </div>
     </div>
