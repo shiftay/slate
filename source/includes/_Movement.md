@@ -1,7 +1,7 @@
 # Movement
 
 
-## void Start (
+## void Start ()
   Entry point for all Unity objects
 
 
@@ -9,11 +9,11 @@
   Called once a frame.
 
 
-## void FixedUpdate (
+## void FixedUpdate ()
   Every fixed frame, used for physics updates.
 
 
-## public void LoadNext() 
+## public void LoadNext()
   Load the HighScore scene.
 
 
@@ -29,7 +29,14 @@
   Sets the game score back to 0.
 
 
-## void OnTriggerEnter2D(Collider2D other 
+## void OnCollisionEnter2D(Collision2D other)
+  Checks collisions with enemies, and objects
+
+Parameter | Description 
+ --------|--------
+other | The object that was run into.
+
+## void OnTriggerEnter2D(Collider2D other) 
  > Checks what tag the object has, adds score, and deletes the object.
 
 ```csharp
@@ -37,10 +44,8 @@
 ```
 
 
-  Checks collisions with enemies, and objects
+  Adds to the score, when overlapping with an Interactable
 
 Parameter | Description 
  --------|--------
-other | >The object that was run into.
-###
-  Adds to the score, when overlapping with an Interactable
+other | The interactable being overlapped
