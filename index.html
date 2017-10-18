@@ -236,16 +236,28 @@
                   <li>
                     <a href="#public-int-getscore" class="toc-h2 toc-link" data-title="GameManager">public int GetScore()</a>
                   </li>
+                  <li>
+                    <a href="#public-void-bonusscore-int-bonus" class="toc-h2 toc-link" data-title="GameManager">public void BonusScore(int bonus)</a>
+                  </li>
               </ul>
           </li>
           <li>
             <a href="#spawner" class="toc-h1 toc-link" data-title="Spawner">Spawner</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#void-start" class="toc-h2 toc-link" data-title="Spawner">void Start(</a>
+                    <a href="#void-start" class="toc-h2 toc-link" data-title="Spawner">void Start()</a>
                   </li>
                   <li>
-                    <a href="#void-update" class="toc-h2 toc-link" data-title="Spawner">void Update(</a>
+                    <a href="#void-update" class="toc-h2 toc-link" data-title="Spawner">void Update()</a>
+                  </li>
+                  <li>
+                    <a href="#void-spawnflyers-float-x" class="toc-h2 toc-link" data-title="Spawner">void SpawnFlyers(float x)</a>
+                  </li>
+                  <li>
+                    <a href="#void-spawnenemies-float-x" class="toc-h2 toc-link" data-title="Spawner">void SpawnEnemies(float x)</a>
+                  </li>
+                  <li>
+                    <a href="#void-spawncoins-float-x" class="toc-h2 toc-link" data-title="Spawner">void SpawnCoins(float x)</a>
                   </li>
                   <li>
                     <a href="#void-changetheme" class="toc-h2 toc-link" data-title="Spawner">void ChangeTheme()</a>
@@ -256,13 +268,13 @@
             <a href="#movement" class="toc-h1 toc-link" data-title="Movement">Movement</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#void-start" class="toc-h2 toc-link" data-title="Movement">void Start (</a>
+                    <a href="#void-start" class="toc-h2 toc-link" data-title="Movement">void Start ()</a>
                   </li>
                   <li>
                     <a href="#void-update" class="toc-h2 toc-link" data-title="Movement">void Update()</a>
                   </li>
                   <li>
-                    <a href="#void-fixedupdate" class="toc-h2 toc-link" data-title="Movement">void FixedUpdate (</a>
+                    <a href="#void-fixedupdate" class="toc-h2 toc-link" data-title="Movement">void FixedUpdate ()</a>
                   </li>
                   <li>
                     <a href="#public-void-loadnext" class="toc-h2 toc-link" data-title="Movement">public void LoadNext()</a>
@@ -277,7 +289,10 @@
                     <a href="#void-reset" class="toc-h2 toc-link" data-title="Movement">void Reset()</a>
                   </li>
                   <li>
-                    <a href="#void-ontriggerenter2d-collider2d-other" class="toc-h2 toc-link" data-title="Movement">void OnTriggerEnter2D(Collider2D other</a>
+                    <a href="#void-oncollisionenter2d-collision2d-other" class="toc-h2 toc-link" data-title="Movement">void OnCollisionEnter2D(Collision2D other)</a>
+                  </li>
+                  <li>
+                    <a href="#void-ontriggerenter2d-collider2d-other" class="toc-h2 toc-link" data-title="Movement">void OnTriggerEnter2D(Collider2D other)</a>
                   </li>
               </ul>
           </li>
@@ -311,12 +326,12 @@
 <h2 id='bool-updatespeed'>bool UpdateSpeed()</h2>
 <p>Updates the speed of the character based off of their score.</p>
 
-<p><strong>Returns</strong>  Boolean depciting</p>
+<p><strong>Returns</strong>  Boolean depicting whether we should update difficulty</p>
 <h2 id='public-int-getscore'>public int GetScore()</h2>
 <p>Removes the decimal from the value</p>
 
-<p><strong>Returns</strong> </p>
-
+<p><strong>Returns</strong>  The Score value. </p>
+<h2 id='public-void-bonusscore-int-bonus'>public void BonusScore(int bonus)</h2>
 <p>Adds to the currentScore on collecting of coins / powerups</p>
 
 <table><thead>
@@ -327,12 +342,12 @@
 </thead><tbody>
 <tr>
 <td>bonus</td>
-<td>&gt; The value added to the score.</td>
+<td>The value added to the score.</td>
 </tr>
 </tbody></table>
-<h1 id='spawner'>Spawner</h1><h2 id='void-start'>void Start(</h2>
+<h1 id='spawner'>Spawner</h1><h2 id='void-start'>void Start()</h2>
 <p>Entry point of all Unity&#39;s objects</p>
-<h2 id='void-update'>void Update(</h2>
+<h2 id='void-update'>void Update()</h2>
 <blockquote>
 <p>Spawn all items at the same time.</p>
 </blockquote>
@@ -341,7 +356,7 @@
   <span class="nf">SpawnCoins</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
 </code></pre>
 <p>Runs once a frame.</p>
-<h2 id='void-changetheme'>void ChangeTheme()</h2>
+<h2 id='void-spawnflyers-float-x'>void SpawnFlyers(float x)</h2>
 <p>Spawns flying Mob</p>
 
 <table><thead>
@@ -352,20 +367,44 @@
 </thead><tbody>
 <tr>
 <td>x</td>
-<td>&gt; The X coordinate of their spawn location.</td>
+<td>The X coordinate of their spawn location.</td>
 </tr>
 </tbody></table>
-
+<h2 id='void-spawnenemies-float-x'>void SpawnEnemies(float x)</h2>
 <p>Spawns regular Obstacles and Enemies</p>
 
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x</td>
+<td>The X coordinate of their spawn location.</td>
+</tr>
+</tbody></table>
+<h2 id='void-spawncoins-float-x'>void SpawnCoins(float x)</h2>
 <p>Spawns coins, and interactables.</p>
 
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x</td>
+<td>The X coordinate of their spawn location.</td>
+</tr>
+</tbody></table>
+<h2 id='void-changetheme'>void ChangeTheme()</h2>
 <p>Changes the Theme</p>
-<h1 id='movement'>Movement</h1><h2 id='void-start'>void Start (</h2>
+<h1 id='movement'>Movement</h1><h2 id='void-start'>void Start ()</h2>
 <p>Entry point for all Unity objects</p>
 <h2 id='void-update'>void Update()</h2>
 <p>Called once a frame.</p>
-<h2 id='void-fixedupdate'>void FixedUpdate (</h2>
+<h2 id='void-fixedupdate'>void FixedUpdate ()</h2>
 <p>Every fixed frame, used for physics updates.</p>
 <h2 id='public-void-loadnext'>public void LoadNext()</h2>
 <p>Load the HighScore scene.</p>
@@ -375,16 +414,7 @@
 <p>Load the Intro Scene</p>
 <h2 id='void-reset'>void Reset()</h2>
 <p>Sets the game score back to 0.</p>
-<h2 id='void-ontriggerenter2d-collider2d-other'>void OnTriggerEnter2D(Collider2D other</h2>
-<blockquote>
-<p>Checks what tag the object has, adds score, and deletes the object.</p>
-</blockquote>
-<pre class="highlight csharp tab-csharp"><code>  <span class="k">if</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">gameObject</span><span class="p">.</span><span class="n">tag</span> <span class="p">==</span> <span class="s">"Interactable"</span><span class="p">){</span>
-      <span class="n">GameManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="nf">BonusScore</span><span class="p">(</span><span class="m">10</span><span class="p">);</span>
-      <span class="n">GameManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">Collected</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
-      <span class="nf">Destroy</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">gameObject</span><span class="p">);</span>
-  <span class="p">}</span>
-</code></pre>
+<h2 id='void-oncollisionenter2d-collision2d-other'>void OnCollisionEnter2D(Collision2D other)</h2>
 <p>Checks collisions with enemies, and objects</p>
 
 <table><thead>
@@ -395,11 +425,32 @@
 </thead><tbody>
 <tr>
 <td>other</td>
-<td>&gt;The object that was run into.</td>
+<td>The object that was run into.</td>
 </tr>
 </tbody></table>
-
+<h2 id='void-ontriggerenter2d-collider2d-other'>void OnTriggerEnter2D(Collider2D other)</h2>
+<blockquote>
+<p>Checks what tag the object has, adds score, and deletes the object.</p>
+</blockquote>
+<pre class="highlight csharp tab-csharp"><code>  <span class="k">if</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">gameObject</span><span class="p">.</span><span class="n">tag</span> <span class="p">==</span> <span class="s">"Interactable"</span><span class="p">){</span>
+      <span class="n">GameManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="nf">BonusScore</span><span class="p">(</span><span class="m">10</span><span class="p">);</span>
+      <span class="n">GameManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">Collected</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+      <span class="nf">Destroy</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">gameObject</span><span class="p">);</span>
+  <span class="p">}</span>
+</code></pre>
 <p>Adds to the score, when overlapping with an Interactable</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>other</td>
+<td>The interactable being overlapped</td>
+</tr>
+</tbody></table>
 
       </div>
       <div class="dark-box">
