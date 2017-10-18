@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>Clean Slate Reference</title>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -201,7 +201,7 @@
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;,&quot;csharp&quot;]">
+  <body class="index" data-languages="[&quot;csharp&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -211,10 +211,6 @@
     <div class="toc-wrapper">
       <img src="images/logo.png" class="logo" alt="Logo" />
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
-              <a href="#" data-language-name="javascript">javascript</a>
               <a href="#" data-language-name="csharp">csharp</a>
         </div>
         <div class="search">
@@ -226,44 +222,68 @@
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
           </li>
           <li>
-            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
-          </li>
-          <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
+            <a href="#gamemanager" class="toc-h1 toc-link" data-title="GameManager">GameManager</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Kittens">Get All Kittens</a>
+                    <a href="#void-start" class="toc-h2 toc-link" data-title="GameManager">void Start ()</a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Kittens">Get a Specific Kitten</a>
+                    <a href="#void-update" class="toc-h2 toc-link" data-title="GameManager">void Update ()</a>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Kittens">Delete a Specific Kitten</a>
+                    <a href="#bool-updatespeed" class="toc-h2 toc-link" data-title="GameManager">bool UpdateSpeed()</a>
+                  </li>
+                  <li>
+                    <a href="#public-int-getscore" class="toc-h2 toc-link" data-title="GameManager">public int GetScore()</a>
                   </li>
               </ul>
           </li>
           <li>
-            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
-          </li>
-          <li>
-            <a href="#test" class="toc-h1 toc-link" data-title="Test">Test</a>
+            <a href="#spawner" class="toc-h1 toc-link" data-title="Spawner">Spawner</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#connects-to-the-database-and-attempts-to-apply-all-adds-updates-and-deletes" class="toc-h2 toc-link" data-title="Test">Connects to the database and attempts to apply all adds,  updates and deletes</a>
+                    <a href="#void-start" class="toc-h2 toc-link" data-title="Spawner">void Start(</a>
+                  </li>
+                  <li>
+                    <a href="#void-update" class="toc-h2 toc-link" data-title="Spawner">void Update(</a>
+                  </li>
+                  <li>
+                    <a href="#void-changetheme" class="toc-h2 toc-link" data-title="Spawner">void ChangeTheme()</a>
                   </li>
               </ul>
           </li>
           <li>
-            <a href="#untitled-1" class="toc-h1 toc-link" data-title="Untitled-1">Untitled-1</a>
+            <a href="#movement" class="toc-h1 toc-link" data-title="Movement">Movement</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#connects-to-the-database-and-attempts-to-apply-all-adds-updates-and-deletes" class="toc-h2 toc-link" data-title="Untitled-1">Connects to the database and attempts to apply all adds,  updates and deletes</a>
+                    <a href="#void-start" class="toc-h2 toc-link" data-title="Movement">void Start (</a>
+                  </li>
+                  <li>
+                    <a href="#void-update" class="toc-h2 toc-link" data-title="Movement">void Update()</a>
+                  </li>
+                  <li>
+                    <a href="#void-fixedupdate" class="toc-h2 toc-link" data-title="Movement">void FixedUpdate (</a>
+                  </li>
+                  <li>
+                    <a href="#public-void-loadnext" class="toc-h2 toc-link" data-title="Movement">public void LoadNext()</a>
+                  </li>
+                  <li>
+                    <a href="#public-void-newgame" class="toc-h2 toc-link" data-title="Movement">public void NewGame()</a>
+                  </li>
+                  <li>
+                    <a href="#public-void-mainmenu" class="toc-h2 toc-link" data-title="Movement">public void MainMenu()</a>
+                  </li>
+                  <li>
+                    <a href="#void-reset" class="toc-h2 toc-link" data-title="Movement">void Reset()</a>
+                  </li>
+                  <li>
+                    <a href="#void-ontriggerenter2d-collider2d-other" class="toc-h2 toc-link" data-title="Movement">void OnTriggerEnter2D(Collider2D other</a>
                   </li>
               </ul>
           </li>
       </div>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
+            <li>Developed with love by <a href='http://www.liftlockstudios.com'>LiftLock Studios</a></li>
             <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
@@ -271,134 +291,34 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Welcome to Clean Slate! The VSCode extension that allows you to create the files seen below. </p>
 
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p>The extension currently supports (C#) and Unity based projects. Clean Slate will create the Markdown Documents for you, and you just have to update your index!</p>
 
-<p>This example API documentation page was created with <a href="https://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
+<p>This page was created with <a href="https://github.com/tripit/slate">Slate</a> and <a href="https://github.com/Liftlock/CleanSlate">CleanSlate</a>.</p>
+<h1 id='gamemanager'>GameManager</h1><h2 id='void-start'>void Start ()</h2>
+<p>Entry point for all Unity objects</p>
+<h2 id='void-update'>void Update ()</h2>
 <blockquote>
-<p>To authorize, use this code:</p>
+<p>Keep attempting to update the Speed / Difficulty</p>
 </blockquote>
-<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<pre class="highlight csharp tab-csharp"><code> <span class="k">if</span><span class="p">(</span><span class="nf">UpdateSpeed</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">gameSpeed</span> <span class="p">+=</span> <span class="m">0.75f</span><span class="p">;</span>
+    <span class="n">speedIncr</span><span class="p">++;</span>
+ <span class="p">}</span>
 </code></pre>
-<blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
-</blockquote>
+<p>Called once a frame</p>
+<h2 id='bool-updatespeed'>bool UpdateSpeed()</h2>
+<p>Updates the speed of the character based off of their score.</p>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
+<p><strong>Returns</strong>  Boolean depciting</p>
+<h2 id='public-int-getscore'>public int GetScore()</h2>
+<p>Removes the decimal from the value</p>
 
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+<p><strong>Returns</strong> </p>
 
-<p><code>Authorization: meowmeowmeow</code></p>
+<p>Adds to the currentScore on collecting of coins / powerups</p>
 
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
-</code></pre>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre>
-<p>This endpoint retrieves all kittens.</p>
-<h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
-</tr>
-<tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
-</tr>
-</tbody></table>
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-<p>This endpoint retrieves a specific kitten.</p>
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-<h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -406,38 +326,24 @@ Remember — a happy kitten is an authenticated kitten!
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td>bonus</td>
+<td>&gt; The value added to the score.</td>
 </tr>
 </tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -X DELETE
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<h1 id='spawner'>Spawner</h1><h2 id='void-start'>void Start(</h2>
+<p>Entry point of all Unity&#39;s objects</p>
+<h2 id='void-update'>void Update(</h2>
+<blockquote>
+<p>Spawn all items at the same time.</p>
+</blockquote>
+<pre class="highlight csharp tab-csharp"><code>  <span class="nf">SpawnEnemies</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+  <span class="nf">SpawnFlyers</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+  <span class="nf">SpawnCoins</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
 </code></pre>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-<p>This endpoint retrieves a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
+<p>Runs once a frame.</p>
+<h2 id='void-changetheme'>void ChangeTheme()</h2>
+<p>Spawns flying Mob</p>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -445,121 +351,59 @@ Remember — a happy kitten is an authenticated kitten!
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
-</tr>
-</tbody></table>
-<h1 id='errors'>Errors</h1>
-<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files...just save them to the `includes` folder and add them to the top of your `index.md`'s frontmatter. Files are included in the order listed.</aside>
-
-<p>The Kittn API uses the following error codes:</p>
-
-<table><thead>
-<tr>
-<th>Error Code</th>
-<th>Meaning</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>400</td>
-<td>Bad Request -- Your request sucks.</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Unauthorized -- Your API key is wrong.</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
-</tr>
-</tbody></table>
-<h1 id='test'>Test</h1><h2 id='connects-to-the-database-and-attempts-to-apply-all-adds-updates-and-deletes'>Connects to the database and attempts to apply all adds,  updates and deletes</h2>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>&quot;data&quot;</td>
-<td>a dataset, passed by reference,  that contains all the  data for updating</td>
-</tr>
-<tr>
-<td>&quot;data&quot;</td>
-<td>a dataset, passed by reference,  that contains all the  data for updating</td>
+<td>x</td>
+<td>&gt; The X coordinate of their spawn location.</td>
 </tr>
 </tbody></table>
 
+<p>Spawns regular Obstacles and Enemies</p>
+
+<p>Spawns coins, and interactables.</p>
+
+<p>Changes the Theme</p>
+<h1 id='movement'>Movement</h1><h2 id='void-start'>void Start (</h2>
+<p>Entry point for all Unity objects</p>
+<h2 id='void-update'>void Update()</h2>
+<p>Called once a frame.</p>
+<h2 id='void-fixedupdate'>void FixedUpdate (</h2>
+<p>Every fixed frame, used for physics updates.</p>
+<h2 id='public-void-loadnext'>public void LoadNext()</h2>
+<p>Load the HighScore scene.</p>
+<h2 id='public-void-newgame'>public void NewGame()</h2>
+<p>Reset the variables, and load the original scene.</p>
+<h2 id='public-void-mainmenu'>public void MainMenu()</h2>
+<p>Load the Intro Scene</p>
+<h2 id='void-reset'>void Reset()</h2>
+<p>Sets the game score back to 0.</p>
+<h2 id='void-ontriggerenter2d-collider2d-other'>void OnTriggerEnter2D(Collider2D other</h2>
 <blockquote>
-<p>This sample shows how to call the SaveData  method from a wireless device.</p>
+<p>Checks what tag the object has, adds score, and deletes the object.</p>
 </blockquote>
-<pre class="highlight csharp tab-csharp"><code>
-<span class="n">AccidentCRUD</span> <span class="n">accCRUD</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Adjuster</span><span class="p">.</span><span class="n">BusinessServices</span><span class="p">.</span><span class="nf">AccidentCRUD</span><span class="p">();</span>
-<span class="n">accCRUD</span><span class="p">.</span><span class="nf">SaveData</span><span class="p">(</span><span class="k">ref</span> <span class="n">ds</span><span class="p">);</span>
-
-</code></pre><h1 id='untitled-1'>Untitled-1</h1><h2 id='connects-to-the-database-and-attempts-to-apply-all-adds-updates-and-deletes'>Connects to the database and attempts to apply all adds,  updates and deletes</h2>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>&quot;data&quot;</td>
-<td>a dataset, passed by reference,  that contains all the  data for updating</td>
-</tr>
-<tr>
-<td>&quot;data&quot;</td>
-<td>a dataset, passed by reference,  that contains all the  data for updating</td>
-</tr>
-</tbody></table>
-
-<blockquote>
-<p>This sample shows how to call the SaveData  method from a wireless device.</p>
-</blockquote>
-<pre class="highlight csharp tab-csharp"><code>
-<span class="n">AccidentCRUD</span> <span class="n">accCRUD</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Adjuster</span><span class="p">.</span><span class="n">BusinessServices</span><span class="p">.</span><span class="nf">AccidentCRUD</span><span class="p">();</span>
-<span class="n">accCRUD</span><span class="p">.</span><span class="nf">SaveData</span><span class="p">(</span><span class="k">ref</span> <span class="n">ds</span><span class="p">);</span>
+<pre class="highlight csharp tab-csharp"><code>  <span class="k">if</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">gameObject</span><span class="p">.</span><span class="n">tag</span> <span class="p">==</span> <span class="s">"Interactable"</span><span class="p">){</span>
+      <span class="n">GameManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="nf">BonusScore</span><span class="p">(</span><span class="m">10</span><span class="p">);</span>
+      <span class="n">GameManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">Collected</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+      <span class="nf">Destroy</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">gameObject</span><span class="p">);</span>
+  <span class="p">}</span>
 </code></pre>
+<p>Checks collisions with enemies, and objects</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>other</td>
+<td>&gt;The object that was run into.</td>
+</tr>
+</tbody></table>
+
+<p>Adds to the score, when overlapping with an Interactable</p>
+
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
-                <a href="#" data-language-name="javascript">javascript</a>
                 <a href="#" data-language-name="csharp">csharp</a>
           </div>
       </div>
